@@ -31,11 +31,21 @@ function changeTitle() {
   if (newTitle) {
     setTitle(newTitle);
   }
+
+  const newTheme = prompt('light or dark');
+  if (newTheme) {
+    setTheme(newTheme);
+  }
+
 }
 
 function changeText() {
   const newText = prompt('Enter essay text');
   if (newText) {
-    setText(newText);
+    setTitle(newText);
+  }
+  const newFontColor = prompt('Enter new font color');
+  if (newFontColor) {
+    setFontColor(newFontColor);
   }
 }
