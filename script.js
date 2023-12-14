@@ -47,5 +47,4 @@ function changeText() {
   if (newFontColor) {
     setFontColor(newFontColor);
   }
-
 }
