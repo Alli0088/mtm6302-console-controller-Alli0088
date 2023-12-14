@@ -14,6 +14,13 @@ function setFontColor(newColor) {
   document.body.style.color =newColor;
 }
 
+function changeTitle() {
+  const newTitle = prompt('Enter title of essay');
+  if (newTitle) {
+    setTitle(newTitle);
+  }
+}
+
 function setTheme(theme) {
   if (theme === 'light') {
     setBackgroundColor('#fff');
@@ -25,11 +32,10 @@ function setTheme(theme) {
   }
 }
 
-
-function changeTitle() {
-  const newTitle = prompt('Enter title of essay');
-  if (newTitle) {
-    setTitle(newTitle);
+function changeText() {
+  const newText = prompt('Enter essay text');
+  if (newText) {
+    setDescription(newText);
   }
 
   const newTheme = prompt('light or dark');
@@ -37,15 +43,9 @@ function changeTitle() {
     setTheme(newTheme);
   }
 
-}
-
-function changeText() {
-  const newText = prompt('Enter essay text');
-  if (newText) {
-    setTitle(newText);
-  }
   const newFontColor = prompt('Enter new font color');
   if (newFontColor) {
     setFontColor(newFontColor);
   }
+
 }
